@@ -9,7 +9,7 @@ build:
 	             && git apply ../patches/00-pom.patch \
 	             && git apply ../patches/01-karaf-features.patch \
 				 && cp -r ../security-jwt modules/ \
-	             && mvn clean install -Pdev -DskipTests -DskipJasmineTests=true
+	             && mvn --batch-mode -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn clean install -Pdev -DskipTests -DskipJasmineTests=true
 
 .PHONY: start
 start:
