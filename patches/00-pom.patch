@@ -1,0 +1,29 @@
+diff --git a/pom.xml b/pom.xml
+index f85a278aa925cfaa2be97c0f7daa246c83eb1d93..afea45899aa7d25485fa43fc3d61f30a5c96b76c 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -203,6 +203,7 @@
+     <module>modules/security-ldap</module>
+     <module>modules/security-lti</module>
+     <module>modules/security-shibboleth</module>
++    <module>modules/security-jwt</module>
+     <module>modules/series-service-api</module>
+     <module>modules/series-service-impl</module>
+     <module>modules/series-service-remote</module>
+@@ -1398,6 +1399,16 @@
+           </exclusion>
+         </exclusions>
+       </dependency>
++      <dependency>
++        <groupId>com.auth0</groupId>
++        <artifactId>java-jwt</artifactId>
++        <version>3.13.0</version>
++      </dependency>
++      <dependency>
++        <groupId>com.auth0</groupId>
++        <artifactId>jwks-rsa</artifactId>
++        <version>0.15.0</version>
++      </dependency>
+     </dependencies>
+   </dependencyManagement>
+   <!-- All non-build related project data below here -->

@@ -1,0 +1,21 @@
+diff --git a/assemblies/karaf-features/src/main/feature/feature.xml b/assemblies/karaf-features/src/main/feature/feature.xml
+index c17f18361b6f4b4ad69b0b0baee6aad216e476f2..72c093b48c0dc7401a59a9516018fc45b5a434a5 100644
+--- a/assemblies/karaf-features/src/main/feature/feature.xml
++++ b/assemblies/karaf-features/src/main/feature/feature.xml
+@@ -74,6 +74,8 @@
+     <bundle>mvn:org.codehaus.groovy/groovy/2.4.3</bundle>
+     <bundle>mvn:org.opencastproject/android-mms/1.2</bundle>
+     <bundle>wrap:mvn:com.googlecode.json-simple/json-simple/${json-simple.version}</bundle>
++    <bundle>wrap:mvn:com.auth0/java-jwt/3.13.0</bundle>
++    <bundle>wrap:mvn:com.auth0/jwks-rsa/0.15.0</bundle>
+ 
+     <!-- AWS Bits -->
+     <bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson.version}</bundle>
+@@ -124,6 +126,7 @@
+     <bundle start-level="82">mvn:org.opencastproject/opencast-security-aai/${project.version}</bundle>
+     <bundle start-level="82">mvn:org.opencastproject/opencast-security-lti/${project.version}</bundle>
+     <bundle start-level="82">mvn:org.opencastproject/opencast-security-shibboleth/${project.version}</bundle>
++    <bundle start-level="82">mvn:org.opencastproject/opencast-security-jwt/${project.version}</bundle>
+     <bundle start-level="82">mvn:org.opencastproject/opencast-series-service-api/${project.version}</bundle>
+     <bundle start-level="82">mvn:org.opencastproject/opencast-serviceregistry/${project.version}</bundle>
+     <bundle start-level="82">mvn:org.opencastproject/opencast-static/${project.version}</bundle>
